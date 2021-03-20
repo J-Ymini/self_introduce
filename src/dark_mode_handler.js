@@ -1,0 +1,29 @@
+'use strict';
+
+//handler
+const handlerButton = document.querySelector('.handler');
+const header = document.querySelector('.header');
+const introPage = document.querySelector('.intro');
+const informationPage = document.querySelector('.information');
+const favoritePage = document.querySelector('.favorite');
+const inwecodePage = document.querySelector('.inwecode');
+
+const items = [header, introPage, informationPage, favoritePage, inwecodePage];
+
+function addNightClass(parameter) {
+  for (const item of parameter) {
+    item.classList.toggle('dark');
+  }
+}
+
+handlerButton.addEventListener('click', function () {
+  addNightClass(items);
+
+  if (handlerButton.dataset.value === 'Bright') {
+    handlerButton.textContent = 'Bright';
+    handlerButton.dataset.value = 'Dark';
+  } else {
+    handlerButton.textContent = 'Dark';
+    handlerButton.dataset.value = 'Bright';
+  }
+});

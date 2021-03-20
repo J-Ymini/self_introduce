@@ -21,13 +21,16 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./style.css" />
+    <script defer src="./src/typing.js"></script>
+    <script defer src="./src/dark_mode_handler.js"></script>
   </head>
   <body>
       <header class="header">
           <ul class="header__content">
+            <li><button type = "button" class="handler" data-value="Bright">Dark</button></li>
             <li><a href="mailto:dydalsdl1414@gmail.com"><img src="./img/email.svg" alt="email" class="email-img"></a></li>
             <li><a href="https://github.com/J-Ymini"><img src="./img/github.svg" alt="github" class="github-img"></a></li>
-            <li><a href="https://velog.io/@dydalsdl1414"><img src="./img/velog.png" alt="velog" 
+            <li><a href="https://velog.io/@dydalsdl1414"><img src="./img/velog.svg" alt="velog" 
               class="velog-img"></a></li>
           </ul>
       </header>
@@ -35,7 +38,7 @@
         <div class="container">
           <div class="row">
             <div class="col">
-              <h1 class= "intro-title">hello, I'm Yongmin!</h1>
+              <h1 class= "intro-title"></h1>
               <div class="intro-scroll-animation">
                 <img src="./img/scroll.png" alt="scroll" class="scroll-img">
                 <p class="intro-desc">scroll down</p>
@@ -48,16 +51,16 @@
         <div class="container">
           <div class="row">
             <div class="col-12">
-              <h1 class="information-title">Information</h1>
+              <h1 class="information-title">Information...</h1>
             </div>
           </div>
           <div class="row">
-            <div class="col-6">
+            <div class="col">
               <div class="profile-photo">
                 <img src="./img/profile.jpeg" alt="프로필 이미지" class="profile-photo">
               </div>
             </div>
-            <div class="col-6 profile-contents-background">
+            <div class="col profile-contents-background">
               <div class="profile-contents">
                 <h3 class>Profile</h3>
                 <p>
@@ -77,7 +80,7 @@
         <div class="container">
           <div class="row">
             <div class="col-12">
-              <h1 class="favorite-title">Favorite</h1>
+              <h1 class="favorite-title">Favorite...</h1>
             </div>
           <div class="row">
             <div class="col-4">
@@ -189,15 +192,15 @@
             </div>
           </div>
           <div class="row">
-            <div class="col-4">
+            <div class="col">
               <h3>More fun!</h3>
               <img src="./img/fun.jpeg" alt="fun" class="fun-img">
             </div>
-            <div class="col-4">
+            <div class="col">
               <h3>More confidence!</h3>
               <img src="./img/confidence.jpg" alt="confidence" class="confidence-img">
             </div>
-            <div class="col-4">
+            <div class="col">
               <h3>More cool!</h3>
               <img src="./img/cool.jpeg" alt="cool" class="cool-img">
             </div>
