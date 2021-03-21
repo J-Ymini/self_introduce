@@ -23,6 +23,7 @@ ol {
   --animation-changeMode: background-color 1000ms;
   --boxShadow-white: -1px 9px 33px -15px white;
   --boxShadow-black: -1px 9px 33px -15px black;
+  --shadow-header-img: drop-shadow(0px 0px 6px white);
 }
 
 body {
@@ -133,6 +134,12 @@ body {
 
 .header.dark .handler {
   color: var(--color-white);
+}
+
+.header.dark .email-img,
+.header.dark .github-img,
+.header.dark .velog-img {
+  filter: var(--shadow-header-img);
 }
 
 /* intro */
