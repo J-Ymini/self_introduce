@@ -32,12 +32,17 @@ function print(randomArr) {
 
 print(introRandomArr());
 
-//blick cursor
+//blink cursor
+const list = [intro, infor, favor, inwecode];
+
+function cursorList(parameter) {
+  for (const item of parameter) {
+    item.classList.toggle('active');
+  }
+}
+
 function blink() {
-  intro.classList.toggle('active');
-  infor.classList.toggle('active');
-  favor.classList.toggle('active');
-  inwecode.classList.toggle('active');
+  cursorList(list);
 }
 
 setInterval(blink, 500);
