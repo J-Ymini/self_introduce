@@ -33,16 +33,18 @@ function print(randomArr) {
 print(introRandomArr());
 
 //blink cursor
-const list = [intro, infor, favor, inwecode];
 
-function cursorList(parameter) {
-  for (const item of parameter) {
-    item.classList.toggle('active');
-  }
-}
+const blinkObject = {
+  list: [intro, infor, favor, inwecode],
+  addActiveClass: function () {
+    for (const item of this.list) {
+      item.classList.toggle('active');
+    }
+  },
+};
 
 function blink() {
-  cursorList(list);
+  blinkObject.addActiveClass();
 }
 
 setInterval(blink, 500);
