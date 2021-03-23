@@ -11,9 +11,7 @@ const inwecodePage = document.querySelector('.inwecode');
 const items = [header, introPage, informationPage, favoritePage, inwecodePage];
 
 function addDarkClass(parameter) {
-  for (const item of parameter) {
-    item.classList.toggle('dark');
-  }
+  parameter.forEach((item) => item.classList.toggle('dark'));
 }
 
 handlerButton.addEventListener('click', function () {
