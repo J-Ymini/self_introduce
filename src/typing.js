@@ -37,9 +37,7 @@ print(introRandomArr());
 const blinkObject = {
   list: [intro, infor, favor, inwecode],
   addActiveClass: function () {
-    for (const item of this.list) {
-      item.classList.toggle('active');
-    }
+    this.list.forEach((item) => item.classList.toggle('active'));
   },
 };
 
